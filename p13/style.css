@@ -1,0 +1,254 @@
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+    --blanco: white;
+    --azul: cadetblue;
+    --rosa: pink;
+    --negro: black;
+    --16: 16rem;
+    --0625: 0.625rem;
+    --00625: 0.0625rem;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 0;
+    margin: 0;
+    min-height: 100vh;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    padding-top: 0;
+    margin-bottom: 10rem;
+}
+
+header {
+    text-align: center;
+}
+
+header img {
+    width: 9.5rem;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+li:hover {
+    color: white;
+    background-color: black;
+}
+
+.main {
+    display: grid;
+    gap: 1.25rem;
+    width: 100%;
+    margin: auto;
+    grid-auto-rows: 1fr;
+    grid-template-columns: var(--16) var(--16) var(--16) var(--16);
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: var(--16);
+    border: var(--00625);
+    border-radius: var(--0625);
+    flex-grow: 1;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.card > p {
+    margin-top: 1rem;
+    margin-bottom: auto;
+}
+
+div.card_label {
+    text-align: center;
+    background-color: pink;
+    border: var(--00625);
+    border-radius: 1rem;
+    width: 5rem;
+    margin-top: auto;
+    padding: 0.5rem;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
+.feedback {
+    margin-top: 4rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 400rem;
+    display: flex;
+    width: 18.75rem;
+    flex-direction: row;
+    background-color: white;
+    height: 2rem;
+    border: var(--00625);
+    border-radius: var(--0625);
+    flex-grow: 1;
+    border: 1px solid black;
+    align-self: center;
+    font-size: 0.75rem;
+}
+
+.feedback a.bien {
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+    background-color: pink;
+    height: 100%;
+    border-top-right-radius: var(--0625);
+    border-bottom-right-radius: var(--0625);
+}
+
+.feedback a.mal {
+    flex-grow: 1;
+    text-align: center;
+    align-self: center;
+    background-color: cadetblue;
+    height: 100%;
+    border-top-left-radius: var(--0625);
+    border-bottom-left-radius: var(--0625);
+}
+
+.feedback a:hover {
+    flex-grow: 3;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+    .main {
+        grid-template-columns: var(--16);
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    nav {
+        flex-direction: column;
+    }
+    .main {
+        grid-template-columns: var(--16) var(--16);
+    }
+}
